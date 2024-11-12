@@ -1,0 +1,44 @@
+/* Image with z-index -1 to place it behind other elements */
+.tree-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Container to stack boxes with different z-index values */
+.container {
+  margin-top: 400px;
+  position: relative;
+}
+
+/* Black box with z-index 1, positioned relative to the container */
+.black-box {
+  position: relative;
+  border: 1px solid black;
+  width: 700px;
+  height: 200px;
+  z-index: 1;
+}
+
+/* Green box with z-index 2, positioned absolute within the container */
+.green-box {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background-color: lightgreen;
+  top: -20px;
+  left: 270px;
+  z-index: 2;
+}
+
+/* Gray box with z-index 3, positioned relative and offset within the container */
+.gray-box {
+  position: relative;
+  width: 550px;
+  height: 100px;
+  background-color: lightgray;
+  bottom: 70px;
+  left: 50px;
+  z-index: 3;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Z-index</title>
+</head>
+<body>
+  <!-- Container with an image placed behind text using z-index -->
+  <div class="div-container">
+    <h1>This is a heading</h1>
+    <p>Because the image has z-index of -1, it will be placed behind the text.</p>
+    <img src="img_tree.png" alt="" class="tree-image">
+  </div>
+
+  <!-- Container for box elements demonstrating z-index stacking -->
+  <div class="container">
+    <div class="black-box">Black box (z-index: 1)</div>
+    <div class="green-box">Green box (z-index: 2)</div>
+    <div class="gray-box">Gray box (z-index: 3)</div>
+  </div>
+  
+</body>
+</html>
